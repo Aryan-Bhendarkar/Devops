@@ -1,0 +1,29 @@
+=== Running Processes ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  22080 12756 ?        Ss   12:05   0:00 /sbin/init
+root           2  0.0  0.0   3120  2048 ?        Sl   12:05   0:00 /init
+root           7  0.0  0.0   3156  1984 ?        Sl   12:05   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          53  0.0  0.2  83220 22424 ?        S<s  12:05   0:00 /usr/lib/systemd/systemd-journald
+root          98  0.0  0.0  25280  6400 ?        Ss   12:05   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     163  0.0  0.1  21340 12544 ?        Ss   12:05   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     164  0.0  0.0  91032  7552 ?        Ssl  12:05   0:00 /usr/lib/systemd/systemd-timesyncd
+root         170  0.0  0.0   4236  2432 ?        Ss   12:05   0:00 /usr/sbin/cron -f -P
+message+     171  0.0  0.0   9632  4736 ?        Ss   12:05   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         187  0.0  0.1  18164  8192 ?        Ss   12:05   0:00 /usr/lib/systemd/systemd-logind
+root         192  0.0  0.1 1755840 11904 ?       Ssl  12:05   0:00 /usr/libexec/wsl-pro-service -vv
+root         207  0.0  0.0   3160  1920 hvc0     Ss+  12:05   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       215  0.0  0.0 222512  4992 ?        Ssl  12:05   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         226  0.0  0.0   3116  1792 tty1     Ss+  12:05   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         240  0.0  0.2 107032 22016 ?        Ssl  12:05   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         390  0.0  0.0   6692  4480 pts/1    Ss   12:05   0:00 /bin/login -f
+aryan        435  0.0  0.1  20324 11136 ?        Ss   12:05   0:00 /usr/lib/systemd/systemd --user
+aryan        437  0.0  0.0  21160  3516 ?        S    12:05   0:00 (sd-pam)
+aryan        461  0.0  0.0   6072  4992 pts/1    S+   12:05   0:00 -bash
+root         631  0.0  0.0   3128   908 ?        Ss   12:08   0:00 /init
+root         632  0.0  0.0   3144  1300 ?        S    12:08   0:00 /init
+aryan        637  0.0  0.0   6336  5248 pts/2    Ss   12:08   0:00 -bash
+polkitd     1129  0.0  0.0 308168  7680 ?        Ssl  12:21   0:00 /usr/lib/polkit-1/polkitd --no-debug
+aryan       2137  0.0  0.0   4756  3328 pts/2    S+   13:53   0:00 /bin/bash ./system.sh
+root        2143  0.0  0.0  25284  3652 ?        S    13:53   0:00 (udev-worker)
+root        2144  0.0  0.0  25284  3652 ?        S    13:53   0:00 (udev-worker)
+aryan       2146  0.0  0.0   8288  4096 pts/2    R+   13:53   0:00 ps aux
